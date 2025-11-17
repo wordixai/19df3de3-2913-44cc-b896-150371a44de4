@@ -18,6 +18,7 @@ export function Navigation() {
     { name: '服务', href: '#services' },
     { name: '优势', href: '#advantages' },
     { name: '客户评价', href: '#testimonials' },
+    { name: '资讯', href: '#blogs' },
     { name: '关于我们', href: '#about' },
   ];
 
