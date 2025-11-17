@@ -1,4 +1,6 @@
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 
 const testimonials = [
   {
@@ -52,6 +54,38 @@ const testimonials = [
 ];
 
 export function Testimonials() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: 'start',
+    slidesToScroll: 1,
+  });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on('select', onSelect);
+    onSelect();
+
+    // Auto-play
+    const autoplay = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 5000);
+
+    return () => {
+      clearInterval(autoplay);
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi]);
+
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
+  const scrollTo = (index: number) => emblaApi?.scrollTo(index);
+
   return (
     <section id="testimonials" className="py-24 bg-secondary/30 relative overflow-hidden">
       {/* Background decoration */}
@@ -72,52 +106,92 @@ export function Testimonials() {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="group bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-            >
-              {/* Quote Icon */}
-              <div className="mb-6">
-                <Quote className="text-primary/20 w-12 h-12" />
-              </div>
+        {/* Testimonials Carousel */}
+        <div className="relative">
+          {/* Navigation Buttons */}
+          <button
+            onClick={scrollPrev}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-20 w-12 h-12 bg-card border border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-lg"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft size={24} />
+          </button>
 
-              {/* Rating */}
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="text-amber-400 fill-amber-400"
-                    size={18}
-                  />
-                ))}
-              </div>
+          <button
+            onClick={scrollNext}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-20 w-12 h-12 bg-card border border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-lg"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight size={24} />
+          </button>
 
-              {/* Content */}
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                "{testimonial.content}"
-              </p>
+          {/* Carousel Container */}
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex gap-6">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="flex-[0_0_100%] min-w-0 md:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-6"
+                >
+                  <div className="group bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl h-full">
+                    {/* Quote Icon */}
+                    <div className="mb-6">
+                      <Quote className="text-primary/20 w-12 h-12" />
+                    </div>
 
-              {/* Author */}
-              <div className="flex items-center gap-4 pt-6 border-t border-border">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
-                />
-                <div>
-                  <div className="font-semibold text-foreground">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    {testimonial.position} · {testimonial.company}
+                    {/* Rating */}
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="text-amber-400 fill-amber-400"
+                          size={18}
+                        />
+                      ))}
+                    </div>
+
+                    {/* Content */}
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      "{testimonial.content}"
+                    </p>
+
+                    {/* Author */}
+                    <div className="flex items-center gap-4 pt-6 border-t border-border">
+                      <img
+                        src={testimonial.avatar}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
+                      />
+                      <div>
+                        <div className="font-semibold text-foreground">
+                          {testimonial.name}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {testimonial.position} · {testimonial.company}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Dots Navigation */}
+          <div className="flex justify-center gap-2 mt-8">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => scrollTo(index)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  index === selectedIndex
+                    ? 'bg-primary w-8'
+                    : 'bg-border hover:bg-primary/50'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* CTA Section */}
