@@ -1,6 +1,14 @@
 import { ArrowRight, Play } from 'lucide-react';
+import { useState } from 'react';
+import { VideoModal } from './VideoModal';
 
 export function Hero() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+  // 使用 YouTube 或其他视频平台的嵌入链接
+  // 示例: https://www.youtube.com/embed/VIDEO_ID
+  const videoUrl = 'https://www.youtube.com/embed/dQw4w9WgXcQ';
+
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background gradient */}
@@ -36,7 +44,10 @@ export function Hero() {
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
 
-              <button className="px-8 py-4 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/80 transition-all flex items-center justify-center gap-2 group">
+              <button
+                onClick={() => setIsVideoOpen(true)}
+                className="px-8 py-4 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/80 transition-all flex items-center justify-center gap-2 group"
+              >
                 <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                   <Play size={16} className="text-primary fill-primary ml-0.5" />
                 </div>
@@ -85,6 +96,13 @@ export function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+        videoUrl={videoUrl}
+      />
     </section>
   );
 }

@@ -412,3 +412,167 @@
 [DEBUG] BigQuery metrics exporter flush complete
 [DEBUG] BigQuery metrics exporter flush complete
 [DEBUG] BigQuery metrics exporter shutdown complete
+[ERROR] "Error: Error: 404 404 page not found\n    at $4.generate (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:231:83170)\n    at q_.makeStatusError (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:716:2117)\n    at q_.makeRequest (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:716:5341)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async XDA (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:1621:2379)\n    at async vEA (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:1989:97)\n    at async yaA (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:1989:306)\n    at async udQ (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:1999:530)"
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /app/.claude.json.tmp.422.1763365789083
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1347 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /app/.claude.json.tmp.422.1763365789083 to /app/.claude.json
+[DEBUG] File /app/.claude.json written atomically
+[DEBUG] Writing to temp file: /app/.claude.json.tmp.422.1763365789087
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1347 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /app/.claude.json.tmp.422.1763365789087 to /app/.claude.json
+[DEBUG] File /app/.claude.json written atomically
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Writing to temp file: /app/src/components/VideoModal.tsx.tmp.422.1763365808218
+[DEBUG] Temp file written successfully, size: 2034 bytes
+[DEBUG] Renaming /app/src/components/VideoModal.tsx.tmp.422.1763365808218 to /app/src/components/VideoModal.tsx
+[DEBUG] File /app/src/components/VideoModal.tsx written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /app/src/components/Hero.tsx.tmp.422.1763365819593
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4405 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /app/src/components/Hero.tsx.tmp.422.1763365819593 to /app/src/components/Hero.tsx
+[DEBUG] File /app/src/components/Hero.tsx written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /app/src/components/Hero.tsx.tmp.422.1763365819618
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4489 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /app/src/components/Hero.tsx.tmp.422.1763365819618 to /app/src/components/Hero.tsx
+[DEBUG] File /app/src/components/Hero.tsx written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /app/src/components/Hero.tsx.tmp.422.1763365819644
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4646 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /app/src/components/Hero.tsx.tmp.422.1763365819644 to /app/src/components/Hero.tsx
+[DEBUG] File /app/src/components/Hero.tsx written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: other
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /app/shell-snapshots/snapshot-bash-1763365788821-q6gu7s.sh
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] Failed to check metrics opt-out status: Request failed with status code 401
+[ERROR] "AxiosError: AxiosError: Request failed with status code 401\n    at ET (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:62:1137)\n    at IncomingMessage.<anonymous> (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:67:9858)\n    at IncomingMessage.emit (node:events:529:35)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1400:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at xZA.request (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:69:2130)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Op5 (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:2278:49781)\n    at async I (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:699:31020)\n    at async RR2 (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:2278:50202)\n    at async io1.doExport (file:///usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/cli.js:2278:50859)"
+[DEBUG] Metrics export disabled by organization setting
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter flush complete
+[DEBUG] BigQuery metrics exporter shutdown complete
