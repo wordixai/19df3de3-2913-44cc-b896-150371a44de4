@@ -17,7 +17,7 @@ export function Navigation() {
     { name: '首页', href: '#home' },
     { name: '产品', href: '#products' },
     { name: '服务', href: '#services' },
-    { name: '优势', href: '#advantages' },
+    { name: '定价', href: '#pricing' },
     { name: '客户评价', href: '#testimonials' },
     { name: '资讯', href: '#blogs' },
   ];
