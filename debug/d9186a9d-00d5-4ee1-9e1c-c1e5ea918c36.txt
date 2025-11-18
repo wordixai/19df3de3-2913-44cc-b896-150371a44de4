@@ -1,0 +1,55 @@
+2025-11-18T09:17:14.100Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-18T09:17:14.103Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-18T09:17:14.103Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-18T09:17:14.103Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-18T09:17:14.104Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-18T09:17:14.171Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-18T09:17:14.174Z [DEBUG] Total LSP servers loaded: 0
+2025-11-18T09:17:14.189Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-18T09:17:14.189Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-18T09:17:14.191Z [DEBUG] LSP server manager initialized successfully
+2025-11-18T09:17:14.192Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-18T09:17:14.277Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/app/skills, project=/app/.claude/skills
+2025-11-18T09:17:14.279Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-11-18T09:17:14.506Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-11-18T09:17:14.508Z [DEBUG] Looking for shell config file: /root/.bashrc
+2025-11-18T09:17:14.508Z [DEBUG] Snapshots directory: /app/shell-snapshots
+2025-11-18T09:17:14.513Z [DEBUG] Creating snapshot at: /app/shell-snapshots/snapshot-bash-1763457434508-xpnc3t.sh
+2025-11-18T09:17:14.513Z [DEBUG] Shell binary exists: true
+2025-11-18T09:17:14.513Z [DEBUG] Execution timeout: 10000ms
+2025-11-18T09:17:14.530Z [DEBUG] Writing to temp file: /app/todos/d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36-agent-d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36.json.tmp.483.1763457434530
+2025-11-18T09:17:14.532Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-18T09:17:14.532Z [DEBUG] Renaming /app/todos/d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36-agent-d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36.json.tmp.483.1763457434530 to /app/todos/d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36-agent-d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36.json
+2025-11-18T09:17:14.533Z [DEBUG] File /app/todos/d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36-agent-d9186a9d-00d5-4ee1-9e1c-c1e5ea918c36.json written atomically
+2025-11-18T09:17:14.536Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-11-18T09:17:14.536Z [DEBUG] Total plugin skills loaded: 0
+2025-11-18T09:17:14.537Z [DEBUG] Total plugin commands loaded: 0
+2025-11-18T09:17:14.538Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-11-18T09:17:14.590Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-11-18T09:17:14.593Z [DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+2025-11-18T09:17:14.594Z [DEBUG] Total plugin agents loaded: 0
+2025-11-18T09:17:14.799Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/local/lib/node_modules/needware-cli/node_modules/@anthropic-ai/claude-agent-sdk/vendor/ripgrep/x64-linux/rg)
+2025-11-18T09:17:14.824Z [DEBUG] Shell snapshot created successfully (1746 bytes)
+2025-11-18T09:17:14.875Z [DEBUG] Skills and commands included in Skill tool:
+2025-11-18T09:17:14.876Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-11-18T09:17:14.909Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-11-18T09:17:14.909Z [DEBUG] Found 0 hook matchers in settings
+2025-11-18T09:17:14.909Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-11-18T09:17:14.913Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-11-18T09:17:14.913Z [DEBUG] Found 0 hook matchers in settings
+2025-11-18T09:17:14.918Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-11-18T09:17:14.950Z [DEBUG] Writing to temp file: /app/.claude.json.tmp.483.1763457434950
+2025-11-18T09:17:14.950Z [DEBUG] Preserving file permissions: 100644
+2025-11-18T09:17:14.951Z [DEBUG] Temp file written successfully, size: 1347 bytes
+2025-11-18T09:17:14.951Z [DEBUG] Applied original permissions to temp file
+2025-11-18T09:17:14.952Z [DEBUG] Renaming /app/.claude.json.tmp.483.1763457434950 to /app/.claude.json
+2025-11-18T09:17:14.952Z [DEBUG] File /app/.claude.json written atomically
+2025-11-18T09:17:14.957Z [DEBUG] Writing to temp file: /app/.claude.json.tmp.483.1763457434957
+2025-11-18T09:17:14.958Z [DEBUG] Preserving file permissions: 100644
+2025-11-18T09:17:14.958Z [DEBUG] Temp file written successfully, size: 1347 bytes
+2025-11-18T09:17:14.959Z [DEBUG] Applied original permissions to temp file
+2025-11-18T09:17:14.959Z [DEBUG] Renaming /app/.claude.json.tmp.483.1763457434957 to /app/.claude.json
+2025-11-18T09:17:14.960Z [DEBUG] File /app/.claude.json written atomically
+2025-11-18T09:17:15.088Z [DEBUG] Getting matching hook commands for SessionStart with query: resume
+2025-11-18T09:17:15.088Z [DEBUG] Found 0 hook matchers in settings
+2025-11-18T09:17:15.089Z [DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
