@@ -15,11 +15,11 @@ export function Navigation() {
 
   const navLinks = [
     { name: '首页', href: '#home' },
+    { name: '产品', href: '#products' },
     { name: '服务', href: '#services' },
     { name: '优势', href: '#advantages' },
     { name: '客户评价', href: '#testimonials' },
     { name: '资讯', href: '#blogs' },
-    { name: '关于我们', href: '#about' },
   ];
 
   return (
