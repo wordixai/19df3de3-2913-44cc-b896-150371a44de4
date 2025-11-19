@@ -5,7 +5,6 @@ import { Services } from '../components/Services';
 import { Pricing } from '../components/Pricing';
 import { Advantages } from '../components/Advantages';
 import { Blogs } from '../components/Blogs';
-import { Faqs } from '../components/Faqs';
 import { Footer } from '../components/Footer';
 
 const Index = () => {
@@ -18,7 +17,6 @@ const Index = () => {
       <Pricing />
       <Advantages />
       <Blogs />
-      <Faqs />
       <Footer />
     </div>
   );
