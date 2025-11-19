@@ -16,7 +16,6 @@ export function Navigation() {
   const navLinks = [
     { name: '首页', href: '#home' },
     { name: '产品', href: '#products' },
-    { name: '服务', href: '#services' },
     { name: '定价', href: '#pricing' },
     { name: '资讯', href: '#blogs' },
   ];
