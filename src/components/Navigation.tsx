@@ -18,7 +18,6 @@ export function Navigation() {
     { name: '产品', href: '#products' },
     { name: '服务', href: '#services' },
     { name: '定价', href: '#pricing' },
-    { name: '客户评价', href: '#testimonials' },
     { name: '资讯', href: '#blogs' },
   ];
 
